@@ -1,0 +1,337 @@
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  border:  0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+ul,
+ol,
+li{
+  list-style: none;
+}
+img{
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body{
+scroll-behavior: smooth;
+  background: #ffffff;
+  height: 100%;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+font-family: Roboto;
+}
+.wrapper {
+    background: #1189a2;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  
+  }
+._container{
+  max-width: 1300px;
+
+  margin: 0px auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+.main {
+    height: 100%;
+    width: 100%;
+}
+.box {
+    margin: 0 auto;
+  max-width: 1700px;
+  background:  #baf2fa;
+  border-radius: 50px 50px 0 0;
+}
+
+@media (max-width:2560px) {
+    .box{
+        padding: 0 300px;
+        
+    }
+}
+@media (max-width:2000px) {
+    .box{
+        padding: 0 300px;
+        margin: 0 30px;
+    }
+}
+@media (max-width:1440px) {
+    .box{
+        padding: 0 125px;
+        margin: 0 10px;
+    }
+}
+@media (max-width:1300px) {
+    .box{
+        padding: 0 25px;
+    }
+}
+@media (max-width:900px) {
+    .box{
+        padding: 0;
+    }
+}
+
+
+/* -------------------------------Шапка------------------------------------------------------------------------------------------------------------------ */
+.header {
+    background: #1FE4FF;
+    padding: 0.5%;
+   position: relative;
+    width: 100%;
+    z-index: 120;
+    min-height: 70px;
+    height: 8%;
+    align-items: center;
+}
+@media (min-width:1600px) {
+    .header {
+        opacity: 0.5;
+    }
+}
+
+/* ------------------------------Главный блок------------------------------------------------------------------------------------------------------------------- */
+.class{
+    margin: -4% 0 0 0;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+/* ------------------------------Заголовок------------------------------------------------------------------------------------------------------------------- */
+.pagetitle {
+    padding: 0 0 70px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.pagetitle__body {
+    position: relative;
+    z-index: 100;
+    margin: -110px 0 0 0 ;
+    padding: 20px 30px;
+    background: #1FE4FF;
+    border-radius: 20px;
+}
+.pagetitle__body_text {
+    text-align: justify;
+    padding: 35px;
+    padding-left: 30px;
+    color: #3D3D3D;
+    font-weight: 700;
+    font-size: 40px;
+    border: #00E0FF;
+    line-height: 129% ;
+}
+@media (max-width:1200px){
+    .pagetitle__body_text {
+        padding-left: 60px;
+    }
+}
+@media (max-width:900px){
+    .pagetitle__body_text {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:1200px) {
+    .pagetitle__body{
+        margin: -50px 0 0 0 ;
+    }
+    .pagetitle__body_text{
+        font-size: 50px;
+    }
+}
+@media (max-width:900px) {
+    .pagetitle {
+        padding: 0 0 58px 0;
+    }
+    .pagetitle__body_text{
+        font-size: 30px;
+    }
+    .class{
+        opacity: 0.6;
+    }
+    .logologo{
+        width: 25px;
+        height: 25px;
+    }
+}
+@media (max-width:400px){
+    .pagetitle__body_text{
+        font-size: 15px;
+    }
+}
+/* ---------------------------------------------Python--------------------------------------------------------------------- */
+
+.body-page__titless {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    margin: 50px 0;
+}
+.body-page__text {
+    margin: 0 0 0 30px;
+    color: #3D3D3D;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 129%;
+}
+.body-page__content {
+    text-align: justify;
+    font-weight: 400;
+    color: #4D4D4D;
+    line-height: 130%;
+    font-size: 21px;
+
+}
+.body-page__content:not(:first-child){
+    margin: 40px 0 40px 0 ;
+}
+.body-page__image {
+    margin: 70px 0 70px 0 ;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.class1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    max-width: 1400px;
+}
+@media (max-width:1200px){
+    .body-page__text{
+        font-weight: 600;
+    font-size: 24px;
+    }
+    .body-page__content {
+        font-size: 18px;
+    }
+}
+#toTop {
+    width:75px;
+    text-align:center;
+    padding:20px;
+    position:fixed;
+    bottom:100px; 
+    right:25px;
+    cursor:pointer;
+    display:none;
+    color:#333;
+    font-size:8px;
+    border-radius: 49%;
+    border:1px solid #50C8EF;
+    transition: 0.3s;
+    margin: 10px;
+   }
+   @media (max-width:2560px){
+    #toTop{
+        width:125px;
+    }
+   }
+   @media (max-width:1920px){
+    #toTop{
+        width:75px;
+        right:40px;
+    }
+   }
+
+#toTop:hover{
+    background-color: #4D4D4D;
+    border:1px solid  #4D4D4D;
+    animation: animAdsCont .6s ease forwards;
+}
+   .body-page__content-blue {
+  width: 100%;
+  
+       padding: 80px 50px;
+       background: #CAEFFF;
+       border: 3px solid #139CFF;
+       border-radius: 50px 0;
+font-weight: 400;
+font-size: 21px;
+line-height: 130%;
+text-align: justify;
+margin: 75px 0;
+color: #4D4D4D;
+}
+@media (max-width:1000px){
+    .body-page__content-blue {
+        font-size: 18px;
+    }
+}
+@media (max-width:400px){
+    .body-page__content-blue {
+        font-size: 14px;
+    }
+}
+
+/* --------------------------------FOOTER------------------------------------------------ */
+.footer {
+    flex-wrap: wrap;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    min-height: 100px;
+    background: #00E0FF;
+}
+
+.footer__logo {
+    padding: 1%;
+}
+.footer__contact {
+
+    display: flex;
+}
+.footer__phone {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    margin: 1% 50px;
+}
+.phone {
+    margin: 0 0 0 20px;
+    font-size: 20px;
+    color: #3D3D3D;
+}
+.footer__mail {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    margin: 1% 60px;
+}
+.footer__contacts {
+margin: 0 0 0 30px ;
+}
+.footer__contacts>*{
+    margin: 0 0 0 20px ;
+}
+.footer__container {
+    display: flex;
+}
